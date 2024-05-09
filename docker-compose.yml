@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  aws-ses:
+    image: aws-ses-v2-local
+    build:
+      context: .
+    container_name: aws-ses-v2-local
+    hostname: aws-ses-v2-local
+    # environment:
+    #   AWS_SES_ACCOUNT:
+    #   SMTP_TRANSPORT:
+    ports:
+      - 8005:8005
